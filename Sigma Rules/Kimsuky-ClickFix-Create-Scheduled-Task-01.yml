@@ -1,0 +1,28 @@
+title: Kimsuky ClickFix Create Scheduled Task 01
+id: 7c682193-f9a1-416c-b547-8d3a859334a2
+status: test
+description: Detects the creation of schtasks that match the pattern used by Kimsuky in their ClickFix attacks.
+references:
+  - https://blog.scarletshark.com/kimsuky-impersonates-the-embassy-of-japan-in-the-united-states-952c749b82d0
+author: Alec Dhuse
+date: 2025-03-21
+licence:  CC0-1.0
+tags:
+    - attack.execution
+    - attack.persistence
+    - attack.t1053.005
+    - attack.t1059.001
+    - actor.kimsuky
+logsource:
+    product: windows
+    category: process_creation
+detection:
+    selection_cli_schtasks:
+      # schtasks /create /tn Update-out-of-date-20240324001883765675 /tr
+      CommandLine|contains:
+        - 'schtasks /create'
+        - 'Update-out-of-date-'
+    condition: all of selection_*
+falsepositives:
+    - Unknown
+level: high
