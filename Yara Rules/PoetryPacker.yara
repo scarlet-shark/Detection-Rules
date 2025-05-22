@@ -4,7 +4,7 @@ rule PoetryPacker  {
       author = "Alec Dhuse"
       creation_date = "2025-03-25"
       updated_date = "2025-03-27"
-      blog_reference = "https://blog.scarletshark.com/analysts-note-phishing-emails-using-svg-images-as-attachments-215cd739204b"
+      reference = "https://blog.scarletshark.com/analysts-note-phishing-emails-using-svg-images-as-attachments-215cd739204b"
       in_the_wild = true
       samples = "bd7b9a246cbf6822a697311203b2dd2d64ca8d25118ded1e4bf7ccceac105f81"
 	strings:
