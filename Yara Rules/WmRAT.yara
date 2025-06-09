@@ -1,10 +1,12 @@
+import "pe"
+
 rule WmRAT : BitterAPT {
     meta:
         author = "Abdallah Elshinbary (n1ghtw0lf, Threatray)"
         description = "Detects WmRAT used by Bitter APT"
         license = "Detection Rule License (DRL) 1.1"
         license_reference = "https://github.com/SigmaHQ/Detection-Rule-License/blob/main/LICENSE.Detection.Rules.md"
-        creation_date = "2025-06-01"        
+        creation_date = "2025-06-01"
         date = "2025-06-01"
         reference = "https://www.threatray.com/blog/the-bitter-end-unraveling-eight-years-of-espionage-antics-part-two"
         hash = "4e3e4d476810c95c34b6f2aa9c735f8e57e85e3b7a97c709adc5d6ee4a5f6ccc"

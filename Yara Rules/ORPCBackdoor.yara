@@ -1,10 +1,12 @@
+import "pe"
+
 rule ORPCBackdoor : BitterAPT {
     meta:
         author = "Abdallah Elshinbary (n1ghtw0lf), Threatray"
         description = "Detects ORPCBackdoor used by Bitter APT"
         license = "Detection Rule License (DRL) 1.1"
         license_reference = "https://github.com/SigmaHQ/Detection-Rule-License/blob/main/LICENSE.Detection.Rules.md"
-        creation_date = "2025-06-01"        
+        creation_date = "2025-06-01"
         date = "2025-06-01"
         reference = "https://www.threatray.com/blog/the-bitter-end-unraveling-eight-years-of-espionage-antics-part-two"
         hash = "8aeb7dd31c764b0cf08b38030a73ac1d22b29522fbcf512e0d24544b3d01d8b3"

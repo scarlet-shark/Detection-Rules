@@ -1,3 +1,5 @@
+import "pe"
+
 rule KugelBlitz : BitterAPT {
     meta:
         author = "Abdallah Elshinbary (n1ghtw0lf), Threatray"

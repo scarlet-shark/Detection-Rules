@@ -1,8 +1,9 @@
+import "pe"
+
 rule WSCSPLBackdoor : BitterAPT {
     meta:
         author = "Abdallah Elshinbary (n1ghtw0lf), Threatray"
         description = "Detects WSCSPL backdoor used by Bitter APT"
-        license = "Detection Rule License (DRL) 1.1"
         license = "Detection Rule License (DRL) 1.1"
         license_reference = "https://github.com/SigmaHQ/Detection-Rule-License/blob/main/LICENSE.Detection.Rules.md"
         date = "2025-06-01"

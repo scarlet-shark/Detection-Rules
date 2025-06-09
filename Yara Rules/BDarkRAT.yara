@@ -1,10 +1,12 @@
+import "pe"
+
 rule BDarkRAT : BitterAPT {
     meta:
         author = "Abdallah Elshinbary (n1ghtw0lf), Threatray"
         description = "Detects BDarkRAT used by Bitter APT"
         license = "Detection Rule License (DRL) 1.1"
         license_reference = "https://github.com/SigmaHQ/Detection-Rule-License/blob/main/LICENSE.Detection.Rules.md"
-        creation_date = "2025-06-01"        
+        creation_date = "2025-06-01"
         date = "2025-06-01"
         reference = "https://www.threatray.com/blog/the-bitter-end-unraveling-eight-years-of-espionage-antics-part-two"
         hash = "e07e8cbeeddc60697cc6fdb5314bd3abb748e3ac5347ff108fef9eab2f5c89b8"
