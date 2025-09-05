@@ -9,7 +9,7 @@ rule Kimsuky_Lure_PDF  {
       threat_actor = "Kimsuky"
       hash = "ddf2832cde87548132688b28a27e6b4a0103e7d07fb88a5f10225145daa88926"
       hash = "6b70801994532ecfc5f3d0153350770045d0da922684fa920060e2bf8c50dc94"
-      rule_version = "1.0"
+      rule_version = "1.3"
       license = "Detection Rule License (DRL) 1.1"
       license_reference = "https://github.com/SigmaHQ/Detection-Rule-License/blob/main/LICENSE.Detection.Rules.md"
 
