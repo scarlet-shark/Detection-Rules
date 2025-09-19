@@ -13,7 +13,7 @@ rule CISA_251126_04 : trojan hides_artifacts {
     tool_type = "webshel"
     incident = "251126"
     sha256_1 = "b618057de9a8bba95440f23b9cf6374cc66f2acd127b3d478684b22d8f11e00b"
-    hahs = "b618057de9a8bba95440f23b9cf6374cc66f2acd127b3d478684b22d8f11e00b"
+    hash = "b618057de9a8bba95440f23b9cf6374cc66f2acd127b3d478684b22d8f11e00b"
 
   strings:
     $s0 = { 63 6F 6D 2F 6D 6F 62 69 6C 65 69 72 6F 6E 2F 73 65 72 76 69 63 65 2F }
