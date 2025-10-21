@@ -9,7 +9,8 @@ rule PolarEdgeBackdoor{
         malware = "PolarEdge Backdoor"
         source = "Sekoia.io"
         id = "c3749828-4345-424e-a1f4-d13ed227e6d2"
-        version = "1.0"        
+        version = "1.0"
+        hash = "a3e2826090f009691442ff1585d07118c73c95e40088c47f0a16c8a59c9d9082"        
 
     strings:
         $marker1 = {41 82 01 67 42 22 04 17}
