@@ -1,0 +1,28 @@
+title: Kimsuky ClickFix Add Startup Folder Item 01
+id: 7c682193-f9a1-416c-b547-8d3a859334b3
+status: test
+description: Detects the addition of a Startup Folder VBS file that matches the pattern used by Kimsuky in their ClickFix attacks.
+references:
+author: Alec Dhuse
+date: 2025-10-22
+licence:  CC0-1.0
+tags:
+    - attack.execution
+    - attack.persistence
+    - attack.t1547.001
+    - attack.t1059.001
+    - attack.t1059.005
+    - actor.kimsuky
+logsource:
+    product: windows
+    category: file_event
+detection:
+    selection_cli_schtasks:
+      # set "c1=move /y "c:\templog\temp" "%appdata%\microsoft\windows\start menu\programs\startup\temp.vbs""&call %c1:=%
+      CommandLine|contains:
+        - 'c1=move'
+        - '%appdata%\microsoft\windows\start menu\programs\startup\temp.vbs'
+    condition: all of selection_*
+falsepositives:
+    - Unknown
+level: high
