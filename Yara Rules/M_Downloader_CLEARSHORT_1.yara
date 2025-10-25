@@ -2,10 +2,10 @@ rule M_Downloader_CLEARSHORT_1 {
     meta:
         author = "Mandiant"
         description = "Detects CLEARSHORT malware."
-        date = "2025-09-25"
+        date = "2025-10-16"
         reference = "https://cloud.google.com/blog/topics/threat-intelligence/unc5142-etherhiding-distribute-malware"
         version = "1.0"
-        
+
     strings:
         $payload_b641 = "ipconfig /flushdns" base64
         $payload_b642 = "[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String(" base64
