@@ -2,9 +2,9 @@ rule G_Backdoor_COMPOOD_1 {
 
 	meta:
     description = "Detects COMPOOD malware."
-		author = "Google Threat Intelligence Group (GTIG)"
+    author = "Google Threat Intelligence Group (GTIG)"
     date = "2025-12-11"
-		date_modified = "2025-12-11"
+    date_modified = "2025-12-11"
     md5 = "d3e7b234cf76286c425d987818da3304"
     hash = "d3e7b234cf76286c425d987818da3304"
     reference = "https://cloud.google.com/blog/topics/threat-intelligence/threat-actors-exploit-react2shell-cve-2025-55182"
