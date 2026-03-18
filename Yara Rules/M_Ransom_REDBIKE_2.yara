@@ -1,5 +1,6 @@
 rule M_Ransom_REDBIKE_2 {
 	meta:
+    description = "Detects REDBIKE / Akira ransomware."
     creation_date = "2026-03-17"
     reference = "https://cloud.google.com/blog/topics/threat-intelligence/ransomware-ttps-shifting-threat-landscape/"
 		author = "Google Threat Intelligence Group (GTIG)"
