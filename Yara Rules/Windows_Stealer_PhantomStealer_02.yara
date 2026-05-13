@@ -1,4 +1,4 @@
-rule Windows_Stealer_PhantomStealer {
+rule Windows_Stealer_PhantomStealer_02 {
     meta:
         description = "Phantom Softwares Stealer .NET Payload (Phantom Stealer v3.5.x)"
         author      = "Dark Atlas; @ELJoOker"

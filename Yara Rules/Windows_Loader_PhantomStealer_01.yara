@@ -1,11 +1,11 @@
-rule Windows_Loader_PhantomStealer {
+rule Windows_Loader_PhantomStealer_01 {
     meta:
         description = "Phantom Stealer NativeAOT pdh.dll Sideloading Loader"
         author      = "Dark Atlas; @ELJoOker"
         date        = "2026-05-05"
         reference   = "https://blog-wp.darkatlas.io/2026/05/13/phantom-stealer-analysis-inside-the-two-layer-attack-chain-hidden-behind-a-windows-dll/"
         hash        = "D8A05DEEFE97C6BBE1E083E9D8A182E6B6E5FBC77AF483D2CDEF0B4CADEC22CE"
-        
+
     strings:
         $s1         = "DotNetRuntimeDebugHeader" ascii
         $s2         = "PdhAddCounterA" ascii
